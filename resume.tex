@@ -6,12 +6,7 @@
 \usepackage{enumitem}
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}
-% \usepackage{amssymb}
-% \usepackage{titlesec}
-% \usepackage{fontspec}
-% \setmainfont{Calibri}
-% \setmainfont[Ligatures=TeX]{Georgia}
-% \setsansfont[Ligatures=TeX]{Arial}
+
 
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -47,9 +42,6 @@
 % \name is self-explanatory. \topinfo is for things like social media, email, phone number, address, etc.
 \name{Brad Schwartz}
 \topinfo{baschwartz95@gmail.com}{(248) 881-2296}{linkedin.com/in/baschwa/}{github.com/bradschwartz}
-% \topinfo{linkedin.com/in/baschwa/}{github.com/bradschwartz}
-% \topinfo{github.com/bradschwartz}
-% \topinfo{(248) 881-2296}
 
 % name your resume sections whatever you want!
 \resumesection{Education}
@@ -60,54 +52,75 @@
 
 % each \item is a point you want to say about the thing.
 \begin{itemize}
-	\item \textbf{Major}: Data Science Engineering \textbf{Minor}: Physics
-	\item Creator at SHIFT Creator Space \hfill Fall '15
-  \item Member of Pensacola Swing Dancing Club \hfill Fall '14--Fall '18
+  \item \textbf{Major}: Data Science Engineering \textbf{Minor}: Physics
 \end{itemize}
-
-% fill your sections with things!
-% \textbf{Technical University of Berlin}, Engineering Summer Study Abroad \hfill Summer '16
-% \begin{itemize}
-% 	\item Cooperated with 16-person team to develop portable solar charging stations from recycled materials, in order to meet energy needs of two environmentally low-impact refugee groups
-% 	\item Fabricated solar panel travel case and support stand with angular adjustment, ensuring maximum efficiency during sunlight hours and protection from climate
-% \end{itemize}
 
 % fill your resume with sections!
 \resumesection{Experience}
 
-\textbf{Data Engineer}, \textbf{Regulatory Finance}, Capital One \hfill Richmond, VA; July '18--Present
+\textbf{Software Engineer}, Capital One \hfill Plano, TX; July '18--Present
 \begin{itemize}
-  \item Rebuilt internal web application for tracking auto loan applications, integrating a Java back-end for pulling historical Snowflake data and displaying through an Angular 6 front-end
-	\item Overhauled cloud infrastructure, utilizing Jenkins pipelines and Dockerized deployment tools to automate manual processes and allow for push-button deployment of code to Elastic MapReduce clusters and 25\% cost-savings
-	\item Built Python framework around modular Apache Spark application, integrating enterprise tools for secret management and data validation, catching bugs earlier in development lifecycle and shortening time to reach production
-  \item Facilitated the migration of multiple data streams across AWS Virtual Private Clouds and enablement of HTTPS traffic, allowing for a single source of truth for regulatory data and tighter restrictions on data access
-  \item Heavily involved in Technology and Development committees, devoted to teaching new technology and personally authored and led an 8-week learning series to get employees AWS Solutions Architect Associate certified
-  % \item Core maintainer of internal Homebrew tap, promoting easier production and distribution of develoment tools
-  % \item Authored and led an 8-week learning series to get employees AWS Solutions Architect Associate certified
-  % \item Promoted strong DevOps principles, increasing amount of infrastructure-as-code and developer ownership, and lowered reliance on manual processes for daily work
-  % \item Modified applications to enable HTTPS traffic for secure creation of regulatory reports
+  \item Transitioned core auto finance decisioning engine from weekly batch
+        process to real time API for declining delinquent credit card customers,
+        leading to fewer breakdowns due to data issues and decreasing unintended
+        lending by 5\%
+  \item Split 10 year old PL/SQL stored procedure into microservice based
+        platform for sending explanatory letters when auto loans are not granted,
+        resulting in fewer breakdowns, higher monitoring in the form of Splunk dashboarding,
+        and fixing multi-year regulatory issue
+  \item Rebuilt internal web application for tracking auto loan applications,
+        integrating a Java back-end for pulling historical data from Snowflake
+        and displaying through an Angular 6 front-end
+  \item Overhauled cloud infrastructure, utilizing Jenkins pipelines and
+        Docker-ized deployment tools to automate manual processes and allow for
+        push-button deployment of code to Elastic MapReduce clusters and 25\% cost-savings
+        % \item Built Python framework around modular Apache Spark application, integrating
+        %       enterprise tools for secret management and data validation, reducing the
+        %       deveopment lifecycle time
+  \item Facilitated the migration of multiple data streams across AWS Virtual
+        Private Clouds and enablement of HTTPS traffic, allowing for a single source
+        of truth for regulatory data and tighter restrictions on data access
+        % \item Heavily involved in Technology and Development groups, devoted to teaching
+        %       new technology and personally authored and led an 8-week learning series
+        %       to get employees AWS Solutions Architect Associate certified
+        % \item Core maintainer of internal Homebrew tap, promoting easier production and distribution of develoment tools
+        % \item Promoted strong DevOps principles, increasing amount of infrastructure-as-code and developer ownership, and lowered reliance on manual processes for daily work
+        % \item Modified applications to enable HTTPS traffic for secure creation of regulatory reports
 \end{itemize}
 
 \textbf{Big Data Intern}, \textbf{Cloud Innovation Lab}, Western Digital Corporation \hfill San Jose, CA; Summer '17
 \begin{itemize}
-	\item Extended Python scripts used for automatic tagging of Amazon Web Services resources in order to achieve better tracking of usage and cost, and more thorough report generation
-	\item Built and deployed a Flask web application using Docker containers, integrated with AWS Elastic Container Service and AWS ElastiCache, allowing for a load-balancing service with a responsive delivery system
-  \item Deployed multiple internal web applications, identifying key issues with firewall port and application blocking while gaining familiarity with networking protocols and server-side development
+  \item Extended Python scripts used for automatic tagging of Amazon Web Services
+        resources in order to achieve better tracking of usage and cost, and more
+        thorough report generation
+  \item Built and deployed a Flask web application using Docker containers,
+        integrated with AWS Elastic Container Service and AWS ElastiCache, allowing
+        for a load-balancing service with a responsive delivery system
+  \item Deployed multiple internal web applications, identifying key issues with
+        firewall port and application blocking while gaining familiarity with networking
+        protocols and server-side development
 \end{itemize}
 
 \textbf{Research Assistant}, UofM High Dimensional Data Analysis \hfill Ann Arbor, MI; Oct. '15--May '17
 \begin{itemize}
-  \item Implemented an alternative solution to the Iterative Closest Point problem in Python to create a new matching algorithm involving a series of non-rigid motions
+  \item Implemented an alternative solution to the Iterative Closest Point problem
+        in Python to create a new matching algorithm involving a series of non-rigid motions
   \item Reviewed mathematical publications in order to derive useful metrics for point registration problems
-  \item Explored the results of different algorithms on real world data sets for the purpose of creating a more accurate algorithm and understanding the properties of different formula and metrics
-  \item Created models of new algorithm, using near-isometric and near-Euclidean linear transformations to verify predictions
+  \item Explored the results of different algorithms on real world data sets for the
+        purpose of creating a more accurate algorithm and understanding the
+        properties of different formula and metrics
+  \item Created models of new algorithm, using near-isometric and near-Euclidean
+        inear transformations to verify predictions
 \end{itemize}
 
 \textbf{Research Assistant}, ATLAS Collaboratory Project \hfill Ann Arbor, MI; Summer '15
 \begin{itemize}
   \item Assisted in calibration of ATLAS detector at European Organization for Nuclear Research (CERN)
-  \item Participated in studies of detector measurements, analyzing possible future and reoccurring problems to ensure collected data is complete and accurate for future research
-  \item Created data analysis programs using C\texttt{++} and CERN-created analysis framework to test detector measurements
+  \item Participated in studies of detector measurements, analyzing possible
+        future and reoccurring problems to ensure collected data is complete
+        and accurate for future research
+  \item Created data analysis programs using C\texttt{++} and CERN-created
+        analysis framework to test detector measurements
 \end{itemize}
 
 \vspace{0.2cm}
@@ -115,10 +128,10 @@
 
 \textbf{Programming Languages}
 \begin{itemize}
-  \item Python, Bash, C\texttt{++}, TypeScript, \LaTeX, SQL, Spark/Scala
+  \item Python, Java, Bash, SQL, TypeScript, C\texttt{++}, \LaTeX, Spark/Scala
 \end{itemize}
 
-\textbf{Software Technologies}
+\textbf{Software Technologies \& Frameworks}
 \begin{itemize}
   \item{Amazon Web Services, Git, Docker, Jenkins, Ansible, Apache Spark, Angular}
 \end{itemize}
