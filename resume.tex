@@ -43,58 +43,57 @@
 \name{Brad Schwartz}
 \topinfo{baschwartz95@gmail.com}{(248) 881-2296}{linkedin.com/in/baschwa/}{github.com/bradschwartz}
 
-% name your resume sections whatever you want!
-\resumesection{Education}
-
-% \vspace{.1cm}
-% things written after \hfill will be right-aligned, which is where i usually put dates.
-\textbf{University of Michigan}, College of Engineering \hfill 2014--2018
-
-% each \item is a point you want to say about the thing.
-\begin{itemize}
-  \item \textbf{Major}: Data Science Engineering \textbf{Minor}: Physics
-\end{itemize}
-
 % fill your resume with sections!
 \resumesection{Experience}
 
-\textbf{Software Engineer}, Capital One \hfill Dallas, TX; July '18--Present
+{\Large\textbf{Capital One Financial}}
+
+\textbf{Software Engineer, Enterprise CICD} \hfill Dallas, TX; July '18--Present
 \begin{itemize}
-  \item Contributed to internal Jenkins libraries, leading to a 20-30\% decrease in
+  \item Core contributor to internal Jenkins libraries, leading to a 20-30\% decrease in
         in build times, more secure controls for production releases, and stronger
-        integrations with AWS and internal systems
+        integrations with AWS and enterprise systems
   \item Migrated business-critical applications from customized Jenkins flows
         to standardized and resilient pipelines, enabling higher usage of reusable
         features and controls
+  \item Maintainer of internal Homebrew tap, promoting easier production and distribution of develoment tools
+\end{itemize}
+
+\textbf{Software Engineer, Auto Loans Core Decisioning Platform} \hfill Dallas, TX; Sept. 2019 -- Feb. 2021
+\begin{itemize}
   \item Transitioned core auto finance decisioning engine from weekly batch
         process to real time API for declining delinquent credit card customers,
         leading to fewer breakdowns due to data issues and decreasing unintended
         lending by 5\%
-%   \item Split 10 year old PL/SQL stored procedure into microservice based
-%         platform for sending explanatory letters when auto loans are not granted,
-%         resulting in fewer breakdowns, higher monitoring in the form of Splunk dashboarding,
-%         and fixing multi-year regulatory issue
-%   \item Rebuilt internal web application for tracking auto loan applications,
-%         integrating a Java back-end for pulling historical data from Snowflake
-%         and displaying through an Angular 6 front-end
+  \item Split 10 year old PL/SQL stored procedure into microservice based
+        platform for sending explanatory letters when auto loans are not granted,
+        resulting in fewer breakdowns, higher monitoring in the form of Splunk dashboarding,
+        and fixing multi-year regulatory issue
+  \item Rebuilt internal web application for tracking auto loan applications,
+        integrating a Java back-end for pulling historical data from Snowflake
+        and displaying through an Angular 6 front-end
+\end{itemize}
+
+\textbf{Data Engineer, Risk and Regulatory Tech} \hfill Richmond, VA; Sept. '18 -- Sept. 2019
+\begin{itemize}
   \item Overhauled cloud infrastructure, utilizing Jenkins pipelines and
         Docker-ized deployment tools to automate manual processes and allow for
         push-button deployment of code to Elastic MapReduce clusters and 25\% cost-savings
         % \item Built Python framework around modular Apache Spark application, integrating
         %       enterprise tools for secret management and data validation, reducing the
         %       deveopment lifecycle time
-%   \item Facilitated the migration of multiple data streams across AWS Virtual
-%         Private Clouds and enablement of HTTPS traffic, allowing for a single source
-%         of truth for regulatory data and tighter restrictions on data access
-        % \item Heavily involved in Technology and Development groups, devoted to teaching
-        %       new technology and personally authored and led an 8-week learning series
-        %       to get employees AWS Solutions Architect Associate certified
-        % \item Core maintainer of internal Homebrew tap, promoting easier production and distribution of develoment tools
-        % \item Promoted strong DevOps principles, increasing amount of infrastructure-as-code and developer ownership, and lowered reliance on manual processes for daily work
-        % \item Modified applications to enable HTTPS traffic for secure creation of regulatory reports
+  \item Facilitated the migration of multiple data sources and sinks across AWS Virtual
+        Private Clouds and enablement of HTTPS traffic, allowing for a single source
+        of truth for regulatory data and tighter restrictions on data access
+  \item Heavily involved in Technology and Development groups, devoted to teaching
+        new technology and personally authored and led an 8-week learning series
+        to get employees AWS Solutions Architect Associate certified
 \end{itemize}
 
-\textbf{Big Data Intern}, \textbf{Cloud Innovation Lab}, Western Digital Corporation \hfill San Jose, CA; Summer '17
+\vspace{0.2cm}
+{\Large\textbf{Western Digital Corporation}}
+
+\textbf{Big Data Intern, Cloud Innovation Lab} \hfill San Jose, CA; Summer '17
 \begin{itemize}
   \item Extended Python scripts used for automatic tagging of Amazon Web Services
         resources in order to achieve better tracking of usage and cost, and more
@@ -107,27 +106,29 @@
         protocols and server-side development
 \end{itemize}
 
-\textbf{Research Assistant}, UofM High Dimensional Data Analysis \hfill Ann Arbor, MI; Oct. '15--May '17
-\begin{itemize}
-  \item Implemented an alternative solution to the Iterative Closest Point problem
-        in Python to create a new matching algorithm involving a series of non-rigid motions
-  \item Reviewed mathematical publications in order to derive useful metrics for point registration problems
-  \item Explored the results of different algorithms on real world data sets for the
-        purpose of creating a more accurate algorithm and understanding the
-        properties of different formula and metrics
-  \item Created models of new algorithm, using near-isometric and near-Euclidean
-        inear transformations to verify predictions
-\end{itemize}
+% \textbf{UofM High Dimensional Data Analysis}
+% 
+% \textbf{Research Assistant} \hfill Ann Arbor, MI; Oct. '15--May '17
+% \begin{itemize}
+%   \item Implemented an alternative solution to the Iterative Closest Point problem
+%         in Python to create a new matching algorithm involving a series of non-rigid motions
+%   \item Reviewed mathematical publications in order to derive useful metrics for point registration problems
+%   \item Explored the results of different algorithms on real world data sets for the
+%         purpose of creating a more accurate algorithm and understanding the
+%         properties of different formula and metrics
+%   \item Created models of new algorithm, using near-isometric and near-Euclidean
+%         inear transformations to verify predictions
+% \end{itemize}
 
-\textbf{Research Assistant}, ATLAS Collaboratory Project \hfill Ann Arbor, MI; Summer '15
-\begin{itemize}
-  \item Assisted in calibration of ATLAS detector at European Organization for Nuclear Research (CERN)
-  \item Participated in studies of detector measurements, analyzing possible
-        future and reoccurring problems to ensure collected data is complete
-        and accurate for future research
-  \item Created data analysis programs using C\texttt{++} and CERN-created
-        analysis framework to test detector measurements
-\end{itemize}
+% \textbf{Research Assistant}, ATLAS Collaboratory Project \hfill Ann Arbor, MI; Summer '15
+% \begin{itemize}
+%   \item Assisted in calibration of ATLAS detector at European Organization for Nuclear Research (CERN)
+%   \item Participated in studies of detector measurements, analyzing possible
+%         future and reoccurring problems to ensure collected data is complete
+%         and accurate for future research
+%   \item Created data analysis programs using C\texttt{++} and CERN-created
+%         analysis framework to test detector measurements
+% \end{itemize}
 
 \vspace{0.2cm}
 \resumesection{Technical Skills}
@@ -145,6 +146,17 @@
 \textbf{Certifications}
 \begin{itemize}
   \item{Amazon Web Services Solutions Architect Associate}
+\end{itemize}
+
+\resumesection{Education}
+
+% \vspace{.1cm}
+% things written after \hfill will be right-aligned, which is where i usually put dates.
+\textbf{University of Michigan}, College of Engineering \hfill 2014--2018
+
+% each \item is a point you want to say about the thing.
+\begin{itemize}
+  \item \textbf{Major}: Data Science Engineering \textbf{Minor}: Physics
 \end{itemize}
 
 % \resumesection{Hobbies \& Interests}
