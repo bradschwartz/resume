@@ -7,7 +7,6 @@
 \usepackage[T1]{fontenc}
 \usepackage{xcolor}
 
-
 \renewcommand{\familydefault}{\sfdefault}
 
 % global formatting tweaks.
@@ -32,9 +31,7 @@
 \newcommand{\gobblenextarg}[1]{\separator#1\@ifnextchar\bgroup{\gobblenextarg}{\vspace{-0.2cm}\end{center}}}
 \makeatother
 
-
 \newcommand{\resumesection}[1]{\vspace{-0.5cm}\section*{\LARGE#1}\vspace{-0.2cm}\hrule\vspace{0.2cm}}
-
 
 % feel free to tweak this template to fit your specific needs!
 \begin{document}
@@ -46,24 +43,45 @@
 % fill your resume with sections!
 \resumesection{Experience}
 
-{\Large\textbf{Embark Trucks}}
+{\Large\textbf{Podium}} \hfill Remote; May 2023 -- Present
 
-\textbf{Senior Software Engineer, Developer Experience} \hfill Remote, CA; Nov. '22 -- Mar. '23
+\textbf{Senior Software Engineer, Core App Data Platform}
+\begin{itemize}
+  \item Designed and implemented enterprise SCIM 2.0 automated user lifecycle management, supporting SSO integrations with major identity providers
+  \item Developed real-time user presence system using Phoenix.Presence, Phoenix Channels, and Kafka for tracking live availability of users
+\end{itemize}
+
+\textbf{Senior Software Engineer, Tech Lead, Developer Experience}
+\begin{itemize}
+  \item Improved CI deployment success rate from 50\% to 90\% and reduced deploy times by 5 minutes
+        by introducing reusable container builds,
+        improving dependency management, and adopting Kubernetes best practices like readiness probes and proper resource requests and limits
+  \item Integrated 3rd party vendors into CI/CD pipelines for automated end-to-end testing
+%   \item Led Kubernetes autoscaling initiative using KEDA for Deployments, implementing reusable configuration for custom scalers [NOTE: ADD METRIC - cost savings or performance improvement]
+  \item Standardized Elixir project tooling across 80+ microservices, creating automated library upgrade tracking, health check patterns, and CI pipeline templates for 100\% adoption
+  \item Architected notification system with Kafka event streaming, Oban job processing, and multi-channel delivery (SMS, email, push) handling 2.7MM notifications per day
+\end{itemize}
+
+\vspace{0.1cm}
+
+{\Large\textbf{Embark Trucks}} \hfill Remote; Nov. 2022 -- Mar. 2023
+
+\textbf{Senior Software Engineer, Developer Experience}
 \begin{itemize}
       \item Created ephemeral Jenkins agents on Kubernetes leveraging
             Terraform, Docker, and Jenkins plugins, and migrated a majority of jobs to these nodes
-            for predicted 30\% cost savings on compute and flexible scaling
+            for a predicted 30\% cost savings on compute and flexible scaling
       \item Migrated resources across Terraform Cloud Workspaces to team self-owned
-            workspaces, allowing for greater development speed, impact, and "you build it, you run it" mentality
-      \item Improved Jenkins reliability, stability, and performance, by improving
+            workspaces, allowing for faster development speed, impact, and allowing developers to take full ownership of their infrastructure
+      \item Improved Jenkins reliability, stability, and performance by improving
             the configuration-as-code (Helm/Terraform), automating backups, and enforcing log rotation best practices
 \end{itemize}
 
-\vspace{0.2px}
+\vspace{0.1cm}
 
-{\Large\textbf{Capital One Financial}}
+{\Large\textbf{Capital One Financial}} \hfill Sept. 2018 -- Nov. 2022
 
-\textbf{Senior Software Engineer, Enterprise CICD} \hfill Remote, CA; Feb. '21 -- Nov. '22
+\textbf{Senior Software Engineer, Enterprise CICD}
 \begin{itemize}
   \item Core contributor to internal Jenkins libraries, leading to a 20-30\% decrease in
         build times, more secure controls for production releases, and stronger
@@ -71,46 +89,43 @@
   \item Led the migrations of business-critical applications from customized Jenkins flows
         to standardized and resilient pipelines, enabling higher usage of reusable
         features and controls
-  \item Developed multiple tools and services that improved developer experience by
-        removing complexity and arbitrary-uniqueness while productionizing Docker-based microservice applications
+%   \item Developed multiple tools and services that improved developer experience by
+%         removing complexity and arbitrary-uniqueness while productionizing Docker-based microservice applications
   \item Maintainer of internal Homebrew tap, promoting easier production and distribution of develoment tools
 \end{itemize}
 
-\textbf{Software Engineer, Auto Loans Core Decisioning Platform} \hfill Dallas, TX; Sept. '19 -- Feb. '21
+\textbf{Software Engineer, Auto Loans Core Decisioning Platform}
 \begin{itemize}
   \item Transitioned core auto finance decisioning engine from weekly batch
         process to real time API for declining delinquent credit card customers,
-        leading to fewer breakdowns due to data issues and decreasing unintended
+        leading to fewer data issues and decreasing unintended
         lending by 5\%
   \item Split 10 year old PL/SQL stored procedure into microservice based
         platform for sending explanatory letters when auto loans are not granted,
         resulting in fewer breakdowns, higher monitoring in the form of Splunk dashboarding,
         and fixing multi-year regulatory issue
-  \item Rebuilt internal web application for tracking auto loan applications,
-        integrating a Java back-end for pulling historical data from Snowflake
-        and displaying through an Angular 6 front-end
+%   \item Rebuilt internal web application for tracking auto loan applications,
+%         integrating a Java back-end for pulling historical data from Snowflake
+%         and displaying through an Angular 6 front-end
 \end{itemize}
 
-\textbf{Data Engineer, Risk and Regulatory Tech} \hfill Richmond, VA; Sept. '18 -- Sept. '19
+\textbf{Data Engineer, Risk and Regulatory Tech}
 \begin{itemize}
   \item Overhauled cloud infrastructure, utilizing Jenkins pipelines and
         Docker-ized deployment tools to automate manual processes and allow for
         push-button deployment of code to Elastic MapReduce clusters and 25\% cost-savings
-        % \item Built Python framework around modular Apache Spark application, integrating
-        %       enterprise tools for secret management and data validation, reducing the
-        %       deveopment lifecycle time
   \item Facilitated the migration of multiple data sources and sinks across AWS Virtual
         Private Clouds and enablement of HTTPS traffic, allowing for a single source
         of truth for regulatory data and tighter restrictions on data access
-  \item Heavily involved in Technology and Development groups, devoted to teaching
-        new technology and personally authored and led an 8-week learning series
-        to get employees AWS Solutions Architect Associate certified
+%   \item Heavily involved in Technology and Development groups, devoted to teaching
+%         new technology and personally authored and led an 8-week learning series
+%         to get employees AWS Solutions Architect Associate certified
 \end{itemize}
 
 % \vspace{0.2cm}
 % {\Large\textbf{Western Digital Corporation}}
 
-% \textbf{Big Data Intern, Cloud Innovation Lab} \hfill San Jose, CA; Summer '17
+% \textbf{Big Data Intern, Cloud Innovation Lab} \hfill San Jose, CA; Summer 2017
 % \begin{itemize}
 %   \item Extended Python scripts used for automatic tagging of Amazon Web Services
 %         resources in order to achieve better tracking of usage and cost, and more
@@ -125,7 +140,7 @@
 
 % \textbf{UofM High Dimensional Data Analysis}
 % 
-% \textbf{Research Assistant} \hfill Ann Arbor, MI; Oct. '15--May '17
+% \textbf{Research Assistant} \hfill Ann Arbor, MI; Oct. 2015 -- May 2017
 % \begin{itemize}
 %   \item Implemented an alternative solution to the Iterative Closest Point problem
 %         in Python to create a new matching algorithm involving a series of non-rigid motions
@@ -147,34 +162,34 @@
 %         analysis framework to test detector measurements
 % \end{itemize}
 
-\vspace{0.2cm}
-\resumesection{Technical Skills}
+% \vspace{0.2cm}
+% \resumesection{Technical Skills}
 
-\textbf{Programming Languages}
-\begin{itemize}
-  \item Python, Bash, Java, Groovy, SQL, TypeScript
-\end{itemize}
+% \textbf{Programming Languages}
+% \begin{itemize}
+%   \item Python, Bash, Java, Groovy, SQL, TypeScript
+% \end{itemize}
 
-\textbf{Software Technologies \& Frameworks}
-\begin{itemize}
-  \item{Amazon Web Services, Git, Docker, Jenkins, Ansible, Apache Spark, Angular}
-\end{itemize}
+% \textbf{Software Technologies \& Frameworks}
+% \begin{itemize}
+%   \item{Amazon Web Services, Git, Docker, Jenkins, Ansible, Apache Spark, Angular}
+% \end{itemize}
 
-\textbf{Certifications}
-\begin{itemize}
-  \item{Amazon Web Services Solutions Architect Associate}
-\end{itemize}
+% \textbf{Certifications}
+% \begin{itemize}
+%   \item{Amazon Web Services Solutions Architect Associate}
+% \end{itemize}
 
 \resumesection{Education}
 
 % \vspace{.1cm}
 % things written after \hfill will be right-aligned, which is where i usually put dates.
-\textbf{University of Michigan}, College of Engineering \hfill 2014--2018
+\textbf{University of Michigan}, College of Engineering \hfill 2014 -- 2018
 
 % each \item is a point you want to say about the thing.
 \begin{itemize}
   \item \textbf{Major}: Data Science Engineering \textbf{Minor}: Physics
-  \item \textbf{College Work Experience}: CERN Intern and High Dimensional Data Analysis Research Assistant
+%   \item \textbf{College Work Experience}: CERN Intern and High Dimensional Data Analysis Research Assistant
 \end{itemize}
 
 % \resumesection{Hobbies \& Interests}
